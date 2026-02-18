@@ -603,6 +603,29 @@ a:hover { color: var(--highlight); }
 .compare-card.era-now { border-top: 3px solid var(--sage); }
 
 /* Gallery placeholder */
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-caption {
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -939,27 +962,19 @@ a:hover { color: var(--highlight); }
     <!-- Gallery -->
     <section class="section fade-in" id="gallery">
       <h2 class="section-header" data-i18n="gallery_title">Gallery · Галерея</h2>
-      <p style="color: var(--text-muted); font-style: italic;" data-i18n="gallery_note">Family photographs and archival materials will be added as they are digitized and restored.</p>
+      <p style="color: var(--text-muted); font-style: italic;" data-i18n="gallery_note">From the office to the field — photographs from the family archive.</p>
 
       <div class="gallery-grid">
-        <div class="gallery-placeholder" style="padding:0;overflow:hidden">
-          <img src="photo.jpg" alt="Biographical entry for Gulom Bobojonov from regional historical compendium" style="width:100%;height:100%;object-fit:contain;border-radius:8px;">
-        </div>
-        <div class="gallery-placeholder" data-i18n="gal_institute_html">
-          🏛️<br>At the Institute<br><span style="font-size:0.75rem">В институте</span>
-        </div>
-        <div class="gallery-placeholder" data-i18n="gal_mulberry_html">
-          🌳<br>Mulberry plantations<br><span style="font-size:0.75rem">Тутовые плантации</span>
-        </div>
-        <div class="gallery-placeholder" data-i18n="gal_family_html">
-          👨‍👩‍👧‍👦<br>Family<br><span style="font-size:0.75rem">Семья</span>
-        </div>
-        <div class="gallery-placeholder" data-i18n="gal_docs_html">
-          📜<br>Documents &amp; awards<br><span style="font-size:0.75rem">Документы и награды</span>
-        </div>
-        <div class="gallery-placeholder" data-i18n="gal_ikan_html">
-          🏘️<br>Village of Ikan<br><span style="font-size:0.75rem">Село Икан</span>
-        </div>
+        <div class="gallery-item"><img src="gallery/01-office-phone.jpg" alt="At the office, on the telephone" loading="lazy"><div class="gallery-caption" data-i18n="gal_01">At the office — on the telephone</div></div>
+        <div class="gallery-item"><img src="gallery/03-desk-reading.jpg" alt="Working at his desk" loading="lazy"><div class="gallery-caption" data-i18n="gal_03">At his desk — reviewing documents</div></div>
+        <div class="gallery-item"><img src="gallery/02-portrait-pair.jpg" alt="Official portraits" loading="lazy"><div class="gallery-caption" data-i18n="gal_02">Official portraits</div></div>
+        <div class="gallery-item"><img src="gallery/04-standing-portrait.jpg" alt="At the institute" loading="lazy"><div class="gallery-caption" data-i18n="gal_04">At the institute</div></div>
+        <div class="gallery-item"><img src="gallery/05-colleagues-desk.jpg" alt="With colleagues" loading="lazy"><div class="gallery-caption" data-i18n="gal_05">With colleagues at the office</div></div>
+        <div class="gallery-item"><img src="gallery/06-group-portrait.jpg" alt="Group portrait" loading="lazy"><div class="gallery-caption" data-i18n="gal_06">Group portrait with colleagues</div></div>
+        <div class="gallery-item"><img src="gallery/09-field-students.jpg" alt="In the field with students" loading="lazy"><div class="gallery-caption" data-i18n="gal_09">In the field with students</div></div>
+        <div class="gallery-item"><img src="gallery/07-field-inspection.jpg" alt="Inspecting crops" loading="lazy"><div class="gallery-caption" data-i18n="gal_07">In the field — inspecting crops</div></div>
+        <div class="gallery-item"><img src="gallery/08-field-walking.jpg" alt="Walking through fields" loading="lazy"><div class="gallery-caption" data-i18n="gal_08">Walking through the fields</div></div>
+        <div class="gallery-item"><img src="photo.jpg" alt="Biographical entry" loading="lazy"><div class="gallery-caption" data-i18n="gal_10">Biographical entry — historical compendium</div></div>
       </div>
     </section>
 
@@ -1224,15 +1239,20 @@ const T = {
   // Gallery
   gallery_title: { en: 'Gallery · Галерея', ru: 'Галерея', uz: 'Galereya' },
   gallery_note: {
-    en: 'Family photographs and archival materials will be added as they are digitized and restored.',
-    ru: 'Семейные фотографии и архивные материалы будут добавлены по мере их оцифровки и реставрации.',
-    uz: 'Oilaviy fotosuratlar va arxiv materiallari raqamlashtirilishi va tiklanishi bilan qo\'shiladi.'
+    en: 'From the office to the field — photographs from the family archive.',
+    ru: 'От кабинета до поля — фотографии из семейного архива.',
+    uz: 'Kabinetdan dalaga qadar — oilaviy arxivdan fotosuratlar.'
   },
-  gal_institute_html: { en: '🏛️<br>At the Institute<br><span style="font-size:0.75rem">В институте</span>', ru: '🏛️<br>В институте', uz: '🏛️<br>Institutda' },
-  gal_mulberry_html: { en: '🌳<br>Mulberry plantations<br><span style="font-size:0.75rem">Тутовые плантации</span>', ru: '🌳<br>Тутовые плантации', uz: '🌳<br>Tut plantatsiyalari' },
-  gal_family_html: { en: '👨‍👩‍👧‍👦<br>Family<br><span style="font-size:0.75rem">Семья</span>', ru: '👨‍👩‍👧‍👦<br>Семья', uz: '👨‍👩‍👧‍👦<br>Oila' },
-  gal_docs_html: { en: '📜<br>Documents & awards<br><span style="font-size:0.75rem">Документы и награды</span>', ru: '📜<br>Документы и награды', uz: '📜<br>Hujjatlar va mukofotlar' },
-  gal_ikan_html: { en: '🏘️<br>Village of Ikan<br><span style="font-size:0.75rem">Село Икан</span>', ru: '🏘️<br>Село Икан', uz: '🏘️<br>Ikon qishlog\'i' },
+  gal_01: { en: 'At the office — on the telephone', ru: 'В кабинете — у телефона', uz: 'Kabinetda — telefonda' },
+  gal_02: { en: 'Official portraits', ru: 'Официальные портреты', uz: 'Rasmiy portretlar' },
+  gal_03: { en: 'At his desk — reviewing documents', ru: 'За рабочим столом — изучение документов', uz: 'Ish stolida — hujjatlarni ko\'rib chiqmoqda' },
+  gal_04: { en: 'At the institute', ru: 'В институте', uz: 'Institutda' },
+  gal_05: { en: 'With colleagues at the office', ru: 'С коллегами в кабинете', uz: 'Kabinetda hamkasblar bilan' },
+  gal_06: { en: 'Group portrait with colleagues', ru: 'Групповой портрет с коллегами', uz: 'Hamkasblar bilan guruh surati' },
+  gal_07: { en: 'In the field — inspecting crops', ru: 'В поле — осмотр посевов', uz: 'Dalada — ekinlarni tekshirmoqda' },
+  gal_08: { en: 'Walking through the fields', ru: 'На полях', uz: 'Dalada' },
+  gal_09: { en: 'In the field with students', ru: 'В поле со студентами', uz: 'Dalada talabalar bilan' },
+  gal_10: { en: 'Biographical entry — historical compendium', ru: 'Биографическая запись — исторический справочник', uz: 'Biografik yozuv — tarixiy ma\'lumotnoma' },
 
   // Family
   family_title: { en: 'Family Legacy · Наследие семьи', ru: 'Наследие семьи', uz: 'Oila merosi' },
