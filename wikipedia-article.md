@@ -1,6 +1,6 @@
 # Gulom Bobojonov
 
-**Gulom Babadzhanovich Babadzhanov** (Uzbek: **Гулом Бобожонов**; Russian: **Гулям Бабаджанович Бабаджанов**; born **1907**, Ikan, Turkestan Region) was a Soviet Central Asian scientist, sericulturist, and academic administrator who rose from an orphaned peasant childhood to become rector of an agricultural institute in the Turkestan region of southern Kazakhstan. A specialist in sericulture (*шелководство*) — the science of silkworm (*Bombyx mori*) breeding and mulberry cultivation — Bobojonov is regarded as a representative of the now-vanishing archetype of the "scholar-administrator," whose path to academic leadership was built on deep scientific expertise and personal perseverance rather than political connections.
+**Gulom Babadzhanovich Babadzhanov** (Uzbek: **Гулом Бобожонов**; Russian: **Гулям Бабаджанович Бабаджанов**; **1907**, Ikan, Turkestan Region – **21 May 1955**) was a Soviet Central Asian scientist, sericulturist, and academic administrator who rose from an orphaned peasant childhood to become rector of an agricultural institute in the Turkestan region of southern Kazakhstan. A specialist in sericulture (*шелководство*) — the science of silkworm (*Bombyx mori*) breeding and mulberry cultivation — Bobojonov is regarded as a representative of the now-vanishing archetype of the "scholar-administrator," whose path to academic leadership was built on deep scientific expertise and personal perseverance rather than political connections.
 
 ---
 
@@ -53,7 +53,15 @@ A sericulture scientist of professorial rank, such as Bobojonov, was a figure of
 
 ### Rectorship
 
-Bobojonov rose through the Soviet academic system to become **rector of an agricultural institute** in the Turkestan region. His career trajectory followed the classic Soviet model for a specialist of his caliber:
+Bobojonov rose through the Soviet academic system to become **Director of the Agricultural Institute in Tashkent**.
+
+### World War II (1941–1945)
+
+During the Great Patriotic War, Bobojonov's expertise became directly vital to national defense. Under his direction, the institute's sericulture program supported the **production of parachutes from pure silk** (mulberry silkworm fiber). Silk's unique combination of tensile strength, elasticity, and light weight made it irreplaceable for parachute suspension lines.
+
+Both of the family's grandfathers — **Gulam** and **Amin** — served in the **highest strategic echelon** of the country's war effort during 1941–1945, contributing to defense production that was critical to Soviet airborne operations.
+
+Bobojonov died on **21 May 1955**, at the age of 47–48. His career trajectory followed the classic Soviet model for a specialist of his caliber:
 
 1. **Field experience** — Work as an agronomist-sericulturist, likely in his native Ikan or adjacent districts
 2. **Scientific research** — Dissertation work in biological or agricultural sciences, related to the regionalization of silkworm hybrids

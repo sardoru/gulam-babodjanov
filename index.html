@@ -790,7 +790,7 @@ a:hover { color: var(--highlight); }
 <header class="hero" id="hero">
   <div class="hero-content">
     <h1>Гулом Бобожонов</h1>
-    <div class="subtitle-ru">Gulom Bobojonov · 1907 – ?</div>
+    <div class="subtitle-ru">Gulom Bobojonov · 1907 – 1955</div>
     <div class="dates" data-i18n="hero_dates">Ikan · Turkestan · South Kazakhstan</div>
     <div class="epithet" data-i18n="hero_epithet_html">
       Orphan. Scholar. Rector. Scientist of Silk.<br>
@@ -844,8 +844,16 @@ a:hover { color: var(--highlight); }
           <p data-i18n="tl_science_desc">Specializes in sericulture — silkworm breeding and mulberry cultivation. Defends dissertation, rises through academic ranks.</p>
         </div>
         <div class="timeline-item">
-          <div class="timeline-label" data-i18n="tl_rector_label">Rector</div>
-          <p data-i18n="tl_rector_desc">Appointed rector of an agricultural institute in the Turkestan region — the pinnacle of academic leadership, achieved through decades of scholarly work.</p>
+          <div class="timeline-label" data-i18n="tl_rector_label">Director — Tashkent</div>
+          <p data-i18n="tl_rector_desc">Appointed Director of the Agricultural Institute in Tashkent — the pinnacle of academic leadership, achieved through decades of scholarly work.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label" data-i18n="tl_war_label">1941–1945 — War Effort</div>
+          <p data-i18n="tl_war_desc">During World War II, directed production of parachutes from pure silk (mulberry silkworm) for the Soviet defense. Both grandfathers — Gulam and Amin — served in the highest strategic echelon of the country's war effort.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label" data-i18n="tl_death_label">21 May 1955</div>
+          <p data-i18n="tl_death_desc">Passed away at the age of 47–48, leaving behind a legacy in sericulture science and agricultural education.</p>
         </div>
       </div>
     </section>
@@ -1007,11 +1015,12 @@ a:hover { color: var(--highlight); }
       <table>
         <tr><th data-i18n="ib_fullname">Full name</th><td>Гулом Бобожонов<br><small>Gulom Bobojonov<br>Гулям Бабаджанович Бабаджанов</small></td></tr>
         <tr><th data-i18n="ib_born">Born</th><td data-i18n="ib_born_val_html"><strong>1907</strong><br>Village of Ikan (Иқон), near Turkestan, South Kazakhstan</td></tr>
+        <tr><th data-i18n="ib_died">Died</th><td data-i18n="ib_died_val">21 May 1955 (aged 47–48)</td></tr>
         <tr><th data-i18n="ib_nationality">Nationality</th><td data-i18n="ib_nationality_val">Soviet / Kazakh SSR</td></tr>
         <tr><th data-i18n="ib_ethnicity">Ethnicity</th><td data-i18n="ib_ethnicity_val">Uzbek</td></tr>
         <tr><th data-i18n="ib_field">Field</th><td data-i18n="ib_field_val_html">Sericulture (шелководство)<br>Agricultural Sciences</td></tr>
         <tr><th data-i18n="ib_specialty">Specialty</th><td data-i18n="ib_specialty_val_html">Silkworm breeding (<em>Bombyx mori</em>), mulberry cultivation</td></tr>
-        <tr><th data-i18n="ib_position">Position</th><td data-i18n="ib_position_val">Rector, Agricultural Institute (Turkestan region)</td></tr>
+        <tr><th data-i18n="ib_position">Position</th><td data-i18n="ib_position_val">Director, Agricultural Institute, Tashkent</td></tr>
         <tr><th data-i18n="ib_degree">Degree</th><td data-i18n="ib_degree_val">Candidate of Sciences (кандидат наук)</td></tr>
         <tr><th data-i18n="ib_career">Career path</th><td data-i18n="ib_career_val">Agronomist → Researcher → Dept. Chair → Dean → Rector</td></tr>
         <tr><th data-i18n="ib_known">Known for</th><td data-i18n="ib_known_val">Silkworm genetic fund conservation; academic leadership through scientific merit</td></tr>
@@ -1119,11 +1128,23 @@ const T = {
     ru: 'Специализируется на шелководстве — разведении тутового шелкопряда и выращивании тутовника. Защищает диссертацию, продвигается по научной лестнице.',
     uz: 'Ipakchilikka ixtisoslashadi — ipak qurti yetishtirish va tut daraxti parvarishi. Dissertatsiya himoya qiladi, ilmiy martabada ko\'tariladi.'
   },
-  tl_rector_label: { en: 'Rector', ru: 'Ректор', uz: 'Rektor' },
+  tl_rector_label: { en: 'Director — Tashkent', ru: 'Директор — Ташкент', uz: 'Direktor — Toshkent' },
   tl_rector_desc: {
-    en: 'Appointed rector of an agricultural institute in the Turkestan region — the pinnacle of academic leadership, achieved through decades of scholarly work.',
-    ru: 'Назначен ректором сельскохозяйственного института в Туркестанском регионе — вершина академического руководства, достигнутая десятилетиями научной работы.',
-    uz: 'Turkiston mintaqasidagi qishloq xo\'jaligi institutining rektori etib tayinlandi — bu o\'nlab yillik ilmiy mehnat bilan erishilgan akademik rahbarlikning cho\'qqisi.'
+    en: 'Appointed Director of the Agricultural Institute in Tashkent — the pinnacle of academic leadership, achieved through decades of scholarly work.',
+    ru: 'Назначен директором Сельскохозяйственного института в Ташкенте — вершина академического руководства, достигнутая десятилетиями научной работы.',
+    uz: 'Toshkentdagi Qishloq xo\'jaligi institutining direktori etib tayinlandi — o\'nlab yillik ilmiy mehnat bilan erishilgan akademik rahbarlikning cho\'qqisi.'
+  },
+  tl_war_label: { en: '1941–1945 — War Effort', ru: '1941–1945 — Военные годы', uz: '1941–1945 — Urush yillari' },
+  tl_war_desc: {
+    en: 'During World War II, directed production of parachutes from pure silk (mulberry silkworm) for the Soviet defense. Both grandfathers — Gulam and Amin — served in the highest strategic echelon of the country\'s war effort.',
+    ru: 'Во время Великой Отечественной войны руководил производством парашютов из чистого шёлка (тутового шелкопряда) для обороны страны. Оба деда — Гулям и Амин — работали в высшем стратегическом эшелоне военных усилий.',
+    uz: 'Ikkinchi Jahon urushi davrida mamlakat mudofaasi uchun toza ipakdan (tut ipak qurti) parashyutlar ishlab chiqarishni boshqardi. Har ikkala bobo — G\'ulom va Amin — mamlakatning oliy strategik eshelonida xizmat qildi.'
+  },
+  tl_death_label: { en: '21 May 1955', ru: '21 мая 1955', uz: '1955-yil 21-may' },
+  tl_death_desc: {
+    en: 'Passed away at the age of 47–48, leaving behind a legacy in sericulture science and agricultural education.',
+    ru: 'Скончался в возрасте 47–48 лет, оставив после себя наследие в науке шелководства и сельскохозяйственном образовании.',
+    uz: '47–48 yoshida vafot etdi, ipakchilik ilmi va qishloq xo\'jaligi ta\'limida boy meros qoldirdi.'
   },
 
   // Scientific Legacy
@@ -1303,10 +1324,12 @@ const T = {
   },
   ib_position: { en: 'Position', ru: 'Должность', uz: 'Lavozim' },
   ib_position_val: {
-    en: 'Rector, Agricultural Institute (Turkestan region)',
-    ru: 'Ректор сельскохозяйственного института (Туркестанский регион)',
-    uz: 'Rektor, Qishloq xo\'jaligi instituti (Turkiston mintaqasi)'
+    en: 'Director, Agricultural Institute, Tashkent',
+    ru: 'Директор Сельскохозяйственного института, Ташкент',
+    uz: 'Direktor, Qishloq xo\'jaligi instituti, Toshkent'
   },
+  ib_died: { en: 'Died', ru: 'Дата смерти', uz: 'Vafot etgan sana' },
+  ib_died_val: { en: '21 May 1955 (aged 47–48)', ru: '21 мая 1955 (47–48 лет)', uz: '1955-yil 21-may (47–48 yoshda)' },
   ib_degree: { en: 'Degree', ru: 'Учёная степень', uz: 'Ilmiy daraja' },
   ib_degree_val: {
     en: 'Candidate of Sciences (кандидат наук)',
